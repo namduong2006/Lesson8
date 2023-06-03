@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 95f7c36cfef1e2b49a0d67f9c789138b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - bulletPrefab: {instanceID: 0}
+  - bulletPosition: {instanceID: 0}
+  - rb: {instanceID: 0}
+  - wheel1: {instanceID: 0}
+  - wheel2: {instanceID: 0}
+  - w1right: {instanceID: 0}
+  - w1left: {instanceID: 0}
+  - w2right: {instanceID: 0}
+  - w2left: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Lesson8/Home.unity
+    guid: e2c8740db3eb6524284094a08ce8fb76
+  - enabled: 1
+    path: Assets/Scenes/Lesson8/lesson8.unity
+    guid: 48b135a11403a1b419c55a268e748d97
+  - enabled: 0
+    path: Assets/Scenes/Lesson8/Garage1.unity
+    guid: ccaa2e202185a824e89228412e966183
+  - enabled: 1
+    path: Assets/Scenes/Lesson8/Pause.unity
+    guid: 7310ace3bde2717449c1f5bf589270a6
+  - enabled: 1
+    path: Assets/Scenes/Lesson8/Garage.unity
+    guid: fbef1e9431463bc44850aa41b652d3b1
+  m_configObjects: {}
