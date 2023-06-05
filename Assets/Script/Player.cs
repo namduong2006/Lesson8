@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
     public WheelCollider w2left;
     public GameObject particle;
     public int coin;
-    private ButtonUp buttonUp;
+    
     private void Awake()
     {
         
@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        buttonUp = FindObjectOfType<ButtonUp>();
+        
         rb.centerOfMass=new Vector3 (0,0.8f,0);
     }
 
@@ -94,14 +94,16 @@ public class Player : MonoBehaviour
     
     public void MoveUp()
     {
-        Vector3 up =new Vector3(0,0,Time.deltaTime*10);
-        transform.Translate(up);
-        
+        //Vector3 up =new Vector3(0,0,Time.deltaTime*10);
+        //transform.Translate(up);
+        rb.AddForce(transform.forward * Time.deltaTime, ForceMode.VelocityChange);
+
     }
     public void MoveDown()
     {
-        Vector3 down=Vector3.back;
-        transform.Translate(down*Time.deltaTime*10);
+        //Vector3 down=Vector3.back;
+        //transform.Translate(down*Time.deltaTime*10);
+        rb.AddForce(-transform.forward * 10f * Time.deltaTime, ForceMode.VelocityChange);
     }
     public void MoveLeft()
     {       
@@ -159,7 +161,8 @@ public class Player : MonoBehaviour
         }
         if (other.CompareTag("Coin"))
         {
-            coin++;
+            coin++;    
+            Destroy(other.gameObject);
         }
     }
     public void OnCollisionEnter(Collision collision)

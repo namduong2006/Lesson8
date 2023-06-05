@@ -19,11 +19,11 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene("Scenes/Lesson8/Home");
     }     
-    public void LoadPauseScene()
-    {        
-        SceneManager.LoadScene("Scenes/Lesson8/Pause");
+    //public void LoadPauseScene()
+    //{        
+    //    SceneManager.LoadScene("Scenes/Lesson8/Pause");
         
-    }
+    //}
     public void Resume()
     {
         SceneManager.UnloadSceneAsync("Scenes/Lesson8/Pause");
